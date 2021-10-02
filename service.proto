@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+option go_package = "github.com/torfjor/grpchdr/pb";
+
+message EmptyRequest {};
+message EmptyResponse {};
+
+service EmptyService {
+    rpc Empty(EmptyRequest) returns (EmptyResponse);
+}
